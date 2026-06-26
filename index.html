@@ -3,8 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Lucas Silva Rodrigues Jordão - Psicólogo Clínico e Social em Sumaré-SP. Atendimento especializado e acolhimento.">
-    <title>Lucas Silva Rodrigues Jordão | Psicólogo</title>
+    
+    <!-- SEO Básico -->
+    <meta name="description" content="Lucas Silva Rodrigues Jordão - Psicólogo Clínico e Social em Sumaré-SP. Especialista em desenvolvimento humano, acolhimento e saúde mental. Agende sua consulta.">
+    <title>Lucas Silva Rodrigues Jordão | Psicologia Clínica e Social</title>
+    
+    <!-- Open Graph (Compartilhamento Social - Item 1) -->
+    <meta property="og:title" content="Lucas Silva Rodrigues Jordão | Psicólogo">
+    <meta property="og:description" content="Atendimento psicológico clínico e social em Sumaré-SP. Agende sua consulta e invista na sua qualidade de vida.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://stuartfsi05.github.io/Lucas_LP/"> <!-- URL futura do github pages -->
+    <meta property="og:image" content="https://stuartfsi05.github.io/Lucas_LP/profile.jpg"> <!-- Caminho da imagem para o card -->
+
+    <!-- Placeholders Analytics (Item 7) -->
+    <!-- [COLE SEU CÓDIGO DO GOOGLE ANALYTICS AQUI] -->
+    <!-- [COLE SEU CÓDIGO DO PIXEL DA META AQUI] -->
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +41,7 @@
                 <li><a href="#about" class="nav-link">Sobre Mim</a></li>
                 <li><a href="#services" class="nav-link">Especialidades</a></li>
                 <li><a href="#experience" class="nav-link">Experiência</a></li>
-                <li><a href="#education" class="nav-link">Formação</a></li>
+                <li><a href="#faq" class="nav-link">Dúvidas</a></li>
                 <li><a href="#contact" class="nav-link btn-contact">Contato</a></li>
             </ul>
 
@@ -67,14 +80,27 @@
             </div>
         </section>
 
+        <!-- Social Proof (Parcerias - Item 8) -->
+        <section class="social-proof fade-in-up">
+            <div class="container">
+                <p class="proof-title">Experiência e passagens por:</p>
+                <div class="proof-logos">
+                    <span class="proof-badge"><i class="fa-solid fa-building-user"></i> Nexo Sumaré</span>
+                    <span class="proof-badge"><i class="fa-solid fa-child-reaching"></i> Programa Criança Feliz</span>
+                    <span class="proof-badge"><i class="fa-solid fa-house-medical"></i> Instituto Bem Querer</span>
+                    <span class="proof-badge"><i class="fa-solid fa-heart-pulse"></i> Unimed</span>
+                </div>
+            </div>
+        </section>
+
         <!-- About Section -->
         <section id="about" class="section">
             <div class="container">
                 <div class="about-grid">
                     <div class="about-image fade-in-left">
-                        <!-- Substitua 'profile.jpg' pela foto do Lucas -->
+                        <!-- Imagem com Loading Lazy (Item 2) -->
                         <div class="image-wrapper">
-                            <img src="profile.jpg" alt="Foto de Lucas Jordão" id="profile-img" onerror="this.src='https://ui-avatars.com/api/?name=Lucas+Jordão&size=500&background=random&color=fff'">
+                            <img src="profile.jpg" alt="Foto de Lucas Jordão, Psicólogo Clínico" id="profile-img" loading="lazy" onerror="this.src='https://ui-avatars.com/api/?name=Lucas+Jordão&size=500&background=random&color=fff'">
                             <div class="image-backdrop"></div>
                         </div>
                     </div>
@@ -83,11 +109,17 @@
                             <h2>Sobre <span>Mim</span></h2>
                             <div class="divider"></div>
                         </div>
-                        <p class="lead">Olá, sou Lucas Silva Rodrigues Jordão, 29 anos, psicólogo com CRP ativo e regular.</p>
+                        <p class="lead">Olá, sou Lucas Silva Rodrigues Jordão, 29 anos, psicólogo (CRP ativo).</p>
                         <p>Minha atuação tem como pilar o acolhimento de diferentes demandas clínicas e o desenvolvimento de intervenções voltadas à promoção da saúde mental e qualidade de vida. Atuo nas áreas de Psicologia Clínica, Social e Organizacional, buscando sempre a excelência e o cuidado humano.</p>
                         
+                        <!-- Aprofundamento de Abordagem (Item 9) -->
+                        <div class="approach-box glass-card mt-3 mb-4">
+                            <h4><i class="fa-solid fa-hand-holding-heart"></i> Minha Abordagem</h4>
+                            <p class="text-sm">Trabalho com uma <strong>abordagem integrativa e humanizada</strong>, focado em compreender a sua subjetividade e contexto de vida. O objetivo é fornecer um espaço ético e seguro para que juntos possamos explorar suas emoções e construir novos caminhos para o alívio do sofrimento psíquico.</p>
+                        </div>
+
                         <div class="objectives">
-                            <h3>Objetivos Profissionais</h3>
+                            <h3>Áreas de Atuação</h3>
                             <ul class="tags">
                                 <li>Psicologia Clínica</li>
                                 <li>Psicologia Social</li>
@@ -113,153 +145,199 @@
                     <div class="service-card fade-in-up" style="animation-delay: 0.1s;">
                         <div class="service-icon"><i class="fa-solid fa-brain"></i></div>
                         <h3>Psicologia Clínica</h3>
-                        <p>Atendimento psicológico de alta demanda, realização de psicoterapia breve e continuada. Acolhimento de diferentes demandas clínicas com foco em qualidade de vida.</p>
+                        <p>Atendimento psicológico de alta demanda, realização de psicoterapia breve e continuada com foco em qualidade de vida.</p>
                     </div>
                     
                     <div class="service-card fade-in-up" style="animation-delay: 0.2s;">
                         <div class="service-icon"><i class="fa-solid fa-hands-holding-child"></i></div>
                         <h3>Psicologia Social</h3>
-                        <p>Acolhimento a famílias em vulnerabilidade, visitas domiciliares, monitoramento do desenvolvimento infantil e planejamento de atividades lúdicas.</p>
+                        <p>Acolhimento a famílias, visitas domiciliares, monitoramento do desenvolvimento infantil e planejamento de atividades lúdicas.</p>
                     </div>
                     
                     <div class="service-card fade-in-up" style="animation-delay: 0.3s;">
                         <div class="service-icon"><i class="fa-solid fa-users-gear"></i></div>
                         <h3>Recrutamento & Seleção</h3>
-                        <p>Entrevistas, avaliações psicológicas, triagem de currículos, processos admissionais e suporte ao desenvolvimento organizacional.</p>
+                        <p>Entrevistas, avaliações psicológicas, processos admissionais e suporte ao desenvolvimento organizacional.</p>
                     </div>
 
                     <div class="service-card fade-in-up" style="animation-delay: 0.4s;">
                         <div class="service-icon"><i class="fa-solid fa-seedling"></i></div>
                         <h3>Desenvolvimento Humano</h3>
-                        <p>Capacitação de equipes, apoio técnico e desenvolvimento de atividades focadas no crescimento pessoal e de grupos.</p>
+                        <p>Capacitação de equipes, apoio técnico e desenvolvimento de atividades focadas no crescimento pessoal.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Experience Section -->
+        <!-- Experience & Education (Combined for better flow) -->
         <section id="experience" class="section">
             <div class="container">
                 <div class="section-header centered fade-in-up">
-                    <h2>Trajetória <span>Profissional</span></h2>
+                    <h2>Trajetória e <span>Formação</span></h2>
                     <div class="divider centered"></div>
                 </div>
                 
                 <div class="timeline">
-                    <!-- Nexo Sumaré -->
+                    <div class="timeline-item fade-in-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card border-accent">
+                            <span class="timeline-date"><i class="fa-solid fa-graduation-cap"></i> Concluído em 2024</span>
+                            <h3>Ensino Superior em Psicologia</h3>
+                            <h4>Faculdade Anhanguera Sumaré</h4>
+                            <span class="badge highlight mt-2">CRP Ativo e Regular</span>
+                        </div>
+                    </div>
+
                     <div class="timeline-item fade-in-up">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content glass-card">
                             <span class="timeline-date">Agosto/2025 - Atualmente</span>
                             <h3>Atendimento Clínico</h3>
                             <h4>Nexo Sumaré</h4>
-                            <p>Experiência em atendimento psicológico de alta demanda, psicoterapia breve e continuada, elaboração de registros técnicos e intervenções para promoção da saúde mental.</p>
+                            <p>Psicoterapia breve e continuada, elaboração de registros técnicos e intervenções em saúde mental.</p>
                         </div>
                     </div>
 
-                    <!-- Programa Criança Feliz (Supervisor) -->
                     <div class="timeline-item fade-in-up">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content glass-card">
-                            <span class="timeline-date">Janeiro/2025 – Agosto/2025</span>
-                            <h3>Supervisor - Programa Criança Feliz</h3>
-                            <h4>Prefeitura Municipal</h4>
-                            <p>Planejamento, capacitação de equipes, monitoramento de atividades, apoio técnico e articulação intersetorial para promover o desenvolvimento na primeira infância.</p>
+                            <span class="timeline-date">Fev/2023 - Ago/2025</span>
+                            <h3>Supervisor & Estágio em Psicologia Social</h3>
+                            <h4>Programa Criança Feliz</h4>
+                            <p>Capacitação de equipes, visitas domiciliares, acompanhamento infantil e apoio técnico.</p>
                         </div>
                     </div>
 
-                    <!-- Programa Criança Feliz (Estágio 2) -->
-                    <div class="timeline-item fade-in-up">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content glass-card">
-                            <span class="timeline-date">Fevereiro/2023 - Dezembro/2024</span>
-                            <h3>Estágio em Psicologia Social - Prog. Criança Feliz</h3>
-                            <p>Atividades lúdicas para crianças de 0 a 3 anos, visita domiciliar a famílias em situação de vulnerabilidade, elaboração de relatórios, acompanhamento do desenvolvimento infantil e vínculo familiar.</p>
-                        </div>
-                    </div>
-
-                    <!-- Instituto Bem Querer -->
                     <div class="timeline-item fade-in-up">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content glass-card">
                             <span class="timeline-date">Janeiro/2023 - Fevereiro/2023</span>
                             <h3>Orientador Social</h3>
                             <h4>SCFV - Instituto Bem Querer</h4>
-                            <p>Criação e realização de atividades lúdicas para crianças de 7 a 13 anos. Acompanhamento de grupos e confecção de relatórios técnicos.</p>
+                            <p>Criação e realização de atividades lúdicas para crianças de 7 a 13 anos.</p>
                         </div>
                     </div>
 
-                    <!-- Programa Criança Feliz (Estágio 1) -->
-                    <div class="timeline-item fade-in-up">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content glass-card">
-                            <span class="timeline-date">Maio/2022 – Dezembro/2022</span>
-                            <h3>Estágio em Psicologia Social - Prog. Criança Feliz</h3>
-                            <p>Atividades lúdicas para primeira infância, atendimento de famílias, suporte técnico, trabalho em equipe e organização de visitas e acolhimento do cuidador(a).</p>
-                        </div>
-                    </div>
-
-                    <!-- Unimed -->
                     <div class="timeline-item fade-in-up">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content glass-card">
                             <span class="timeline-date">Fevereiro/2022 – Maio/2022</span>
                             <h3>Estágio em Psicologia Organizacional</h3>
                             <h4>Unimed Salto/Itu</h4>
-                            <p>Apoio em entrevistas, avaliações psicológicas, triagem de currículos, processos admissionais e feedback estruturado a candidatos.</p>
+                            <p>Apoio em avaliações psicológicas, triagem e feedback estruturado a candidatos.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Education Section -->
-        <section id="education" class="section bg-alt">
+        <!-- FAQ Section (Item 4) -->
+        <section id="faq" class="section bg-alt">
             <div class="container">
                 <div class="section-header centered fade-in-up">
-                    <h2>Formação e <span>Capacitações</span></h2>
+                    <h2>Dúvidas <span>Frequentes</span></h2>
+                    <div class="divider centered"></div>
+                    <p>Respostas rápidas para facilitar o seu agendamento.</p>
+                </div>
+                
+                <div class="faq-container fade-in-up">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Como funciona a primeira sessão?
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>A primeira sessão é uma oportunidade para nos conhecermos. Você poderá expor os motivos que o(a) levaram a buscar a terapia e eu explicarei como funciona meu método de trabalho. É um momento de acolhimento e escuta sem julgamentos.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Qual a duração e a frequência das sessões?
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Normalmente, as sessões têm duração de 50 minutos e ocorrem semanalmente. A frequência pode ser ajustada conforme a evolução do processo terapêutico e a necessidade de cada paciente.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Você atende convênio médico?
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Atualmente realizo apenas atendimentos particulares. No entanto, forneço recibo para que você possa solicitar o reembolso diretamente com o seu plano de saúde (verifique as regras do seu convênio).</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Os atendimentos são online ou presenciais?
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Os atendimentos podem ser realizados tanto na modalidade presencial (em Sumaré-SP) quanto online, utilizando plataformas seguras e sigilosas, facilitando o acesso independente de onde você estiver.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section with Form (Item 5) -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header centered fade-in-up">
+                    <h2>Fale <span>Comigo</span></h2>
                     <div class="divider centered"></div>
                 </div>
 
-                <div class="edu-grid">
-                    <div class="edu-column fade-in-up">
-                        <h3><i class="fa-solid fa-graduation-cap"></i> Escolaridade</h3>
-                        <div class="edu-card glass-card">
-                            <h4>Ensino Superior em Psicologia</h4>
-                            <p class="edu-inst">Faculdade Anhanguera Sumaré</p>
-                            <p class="edu-date">Concluído em 2024</p>
-                            <span class="badge highlight">CRP Ativo e Regular</span>
-                        </div>
-                        <div class="edu-card glass-card mt-3">
-                            <h4>Ensino Médio</h4>
-                            <p class="edu-date">Concluído em 2014</p>
-                        </div>
-                        
-                        <h3 class="mt-4"><i class="fa-solid fa-language"></i> Idiomas</h3>
-                        <div class="edu-card glass-card">
-                            <h4>Inglês</h4>
-                            <span class="badge highlight">Avançado</span>
-                        </div>
+                <div class="contact-grid">
+                    <!-- Form (Usando Formspree) -->
+                    <div class="contact-form-container glass-card fade-in-left">
+                        <h3>Envie uma mensagem</h3>
+                        <form action="https://formspree.io/f/xbjnqevl" method="POST" class="contact-form">
+                            <!-- Nota: Altere o endpoint do Formspree ('xbjnqevl') para um seu depois, se quiser -->
+                            <div class="form-group">
+                                <label for="name">Seu Nome</label>
+                                <input type="text" id="name" name="name" required placeholder="Ex: João da Silva">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Seu E-mail</label>
+                                <input type="email" id="email" name="email" required placeholder="Ex: joao@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensagem</label>
+                                <textarea id="message" name="message" rows="4" required placeholder="Como posso ajudar?"></textarea>
+                            </div>
+                            <!-- Campo oculto para o Formspree encaminhar pro email do Lucas -->
+                            <input type="hidden" name="_replyto" value="LucasSilva.RJordao@hotmail.com">
+                            
+                            <button type="submit" class="btn btn-primary w-100">Enviar Mensagem <i class="fa-solid fa-paper-plane"></i></button>
+                        </form>
                     </div>
 
-                    <div class="edu-column fade-in-up" style="animation-delay: 0.2s;">
-                        <h3><i class="fa-solid fa-certificate"></i> Palestras e Cursos</h3>
-                        <ul class="cert-list">
-                            <li class="glass-card">
-                                <i class="fa-solid fa-check-circle text-accent"></i>
-                                <span>Conferência dos direitos do idoso</span>
+                    <div class="contact-info-container fade-in-right">
+                        <h3>Informações de Contato</h3>
+                        <ul class="contact-info-large">
+                            <li>
+                                <div class="icon-circle"><i class="fa-brands fa-whatsapp"></i></div>
+                                <div>
+                                    <h4>WhatsApp</h4>
+                                    <a href="https://wa.me/5519999821990" target="_blank">(19) 99982-1990</a><br>
+                                    <a href="https://wa.me/5519982597693" target="_blank">(19) 98259-7693</a>
+                                </div>
                             </li>
-                            <li class="glass-card">
-                                <i class="fa-solid fa-check-circle text-accent"></i>
-                                <span>Palestra de combate ao abuso e exploração sexual de crianças e adolescentes</span>
+                            <li>
+                                <div class="icon-circle"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <h4>E-mail</h4>
+                                    <a href="mailto:LucasSilva.RJordao@hotmail.com">LucasSilva.RJordao@hotmail.com</a>
+                                </div>
                             </li>
-                            <li class="glass-card">
-                                <i class="fa-solid fa-check-circle text-accent"></i>
-                                <span>Atividades Lúdicas para criança com deficiência</span>
-                            </li>
-                            <li class="glass-card">
-                                <i class="fa-solid fa-check-circle text-accent"></i>
-                                <span>Ação em saúde mental</span>
+                            <li>
+                                <div class="icon-circle"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <h4>Localização</h4>
+                                    <p>Bairro Maria Antônia<br>Sumaré-SP, CEP: 13178-380</p>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -268,34 +346,13 @@
         </section>
     </main>
 
-    <!-- Footer & Contact -->
-    <footer id="contact" class="footer">
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
             <div class="footer-grid fade-in-up">
                 <div class="footer-brand">
                     <h2>Lucas <span>Jordão</span></h2>
                     <p>Psicólogo Clínico e Social dedicado a promover qualidade de vida através de uma escuta ativa e qualificada.</p>
-                </div>
-                
-                <div class="footer-contact">
-                    <h3>Entre em Contato</h3>
-                    <ul class="contact-info">
-                        <li>
-                            <i class="fa-brands fa-whatsapp"></i>
-                            <div>
-                                <a href="https://wa.me/5519999821990" target="_blank">(19) 99982-1990</a><br>
-                                <a href="https://wa.me/5519982597693" target="_blank">(19) 98259-7693</a>
-                            </div>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-envelope"></i>
-                            <a href="mailto:LucasSilva.RJordao@hotmail.com">LucasSilva.RJordao@hotmail.com</a>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-location-dot"></i>
-                            <address>Bairro Maria Antônia<br>Sumaré-SP, CEP: 13178-380</address>
-                        </li>
-                    </ul>
                 </div>
                 
                 <div class="footer-social">
@@ -304,20 +361,34 @@
                         <a href="https://www.instagram.com/psi.lucasjordao/" target="_blank" aria-label="Instagram">
                             <i class="fa-brands fa-instagram"></i>
                         </a>
-                        <!-- Se houver linkedin no futuro, pode colocar aqui -->
                         <a href="https://wa.me/5519999821990" target="_blank" aria-label="WhatsApp">
                             <i class="fa-brands fa-whatsapp"></i>
                         </a>
                     </div>
-                    <p class="mt-3">Acompanhe meu trabalho nas redes sociais.</p>
                 </div>
             </div>
             
             <div class="footer-bottom">
                 <p>&copy; <span id="current-year"></span> Lucas Silva Rodrigues Jordão. Todos os direitos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#" id="open-privacy">Política de Privacidade</a> <!-- Modal simples -->
+                </div>
             </div>
         </div>
     </footer>
+
+    <!-- FAB WhatsApp (Item 3) -->
+    <a href="https://wa.me/5519999821990" target="_blank" class="fab-whatsapp" aria-label="Fale comigo no WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- LGPD Cookie Banner (Item 6) -->
+    <div id="cookie-banner" class="cookie-banner glass-card">
+        <div class="cookie-content">
+            <p><strong>Sua privacidade é importante.</strong> Utilizamos cookies apenas para análise de tráfego e melhoria da sua experiência em nossa página. Não vendemos ou repassamos seus dados.</p>
+            <button id="accept-cookies" class="btn btn-primary">Entendi e Aceito</button>
+        </div>
+    </div>
 
     <!-- Custom Script -->
     <script src="script.js"></script>

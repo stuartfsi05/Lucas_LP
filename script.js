@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const htmlElement = document.documentElement;
     const themeIcon = themeToggleBtn.querySelector('i');
 
-    // Verifica se há tema salvo no localStorage
     const savedTheme = localStorage.getItem('theme');
     
     if (savedTheme) {
@@ -26,9 +25,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateIcon(theme) {
         if (theme === 'dark') {
-            themeIcon.className = 'fa-solid fa-sun'; // Se tá dark, mostra botão de sol
+            themeIcon.className = 'fa-solid fa-sun';
         } else {
-            themeIcon.className = 'fa-solid fa-moon'; // Se tá light, mostra botão de lua
+            themeIcon.className = 'fa-solid fa-moon';
         }
     }
 
@@ -41,15 +40,39 @@ document.addEventListener('DOMContentLoaded', () => {
 
     hamburger.addEventListener('click', () => {
         navLinks.classList.toggle('active');
-        // Animação simples do hamburger
         hamburger.classList.toggle('toggle');
     });
 
-    // Fecha o menu ao clicar em um link
     links.forEach(link => {
         link.addEventListener('click', () => {
             navLinks.classList.remove('active');
             hamburger.classList.remove('toggle');
+        });
+    });
+
+    // ==========================================
+    // FAQ Accordion Logic
+    // ==========================================
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        const questionBtn = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
+
+        questionBtn.addEventListener('click', () => {
+            const isOpen = item.classList.contains('active');
+
+            // Fechar todos os outros
+            faqItems.forEach(otherItem => {
+                otherItem.classList.remove('active');
+                otherItem.querySelector('.faq-answer').style.maxHeight = null;
+            });
+
+            // Se não estava aberto, abre o atual
+            if (!isOpen) {
+                item.classList.add('active');
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+            }
         });
     });
 
@@ -66,12 +89,11 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('is-visible');
-                observer.unobserve(entry.target); // Para animar apenas uma vez
+                observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
 
-    // Seleciona os elementos a serem animados
     const fadeElements = document.querySelectorAll('.fade-in-up, .fade-in-left, .fade-in-right');
     fadeElements.forEach(el => {
         observer.observe(el);
@@ -96,5 +118,35 @@ document.addEventListener('DOMContentLoaded', () => {
     const yearSpan = document.getElementById('current-year');
     if (yearSpan) {
         yearSpan.textContent = new Date().getFullYear();
+    }
+
+    // ==========================================
+    // LGPD Cookie Banner Logic
+    // ==========================================
+    const cookieBanner = document.getElementById('cookie-banner');
+    const acceptCookiesBtn = document.getElementById('accept-cookies');
+
+    // Verifica se já aceitou antes
+    if (!localStorage.getItem('cookiesAccepted')) {
+        // Mostra o banner com um pequeno delay
+        setTimeout(() => {
+            cookieBanner.classList.add('show');
+        }, 1500);
+    }
+
+    acceptCookiesBtn.addEventListener('click', () => {
+        localStorage.setItem('cookiesAccepted', 'true');
+        cookieBanner.classList.remove('show');
+    });
+
+    // ==========================================
+    // Privacy Policy Modal (Placeholder)
+    // ==========================================
+    const privacyLink = document.getElementById('open-privacy');
+    if (privacyLink) {
+        privacyLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            alert('A Política de Privacidade deve ser criada e lincada aqui futuramente. Este é um link de marcação.');
+        });
     }
 });
