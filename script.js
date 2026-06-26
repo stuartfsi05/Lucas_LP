@@ -120,24 +120,6 @@ document.addEventListener('DOMContentLoaded', () => {
         yearSpan.textContent = new Date().getFullYear();
     }
 
-    // ==========================================
-    // LGPD Cookie Banner Logic
-    // ==========================================
-    const cookieBanner = document.getElementById('cookie-banner');
-    const acceptCookiesBtn = document.getElementById('accept-cookies');
-
-    // Verifica se já aceitou antes
-    if (!localStorage.getItem('cookiesAccepted')) {
-        // Mostra o banner com um pequeno delay
-        setTimeout(() => {
-            cookieBanner.classList.add('show');
-        }, 1500);
-    }
-
-    acceptCookiesBtn.addEventListener('click', () => {
-        localStorage.setItem('cookiesAccepted', 'true');
-        cookieBanner.classList.remove('show');
-    });
 
     // ==========================================
     // Privacy Policy Modal (Placeholder)

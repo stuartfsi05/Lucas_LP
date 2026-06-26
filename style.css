@@ -920,36 +920,6 @@ header {
     100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
 }
 
-/* ==========================================================================
-   LGPD Cookie Banner
-   ========================================================================== */
-.cookie-banner {
-    position: fixed;
-    bottom: -150px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    max-width: 800px;
-    z-index: 2000;
-    transition: bottom 0.5s ease;
-}
-
-.cookie-banner.show {
-    bottom: 20px;
-}
-
-.cookie-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-}
-
-.cookie-content p {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    margin: 0;
-}
 
 /* ==========================================================================
    Animations & Interactivity
@@ -1022,7 +992,7 @@ header {
     .social-links { justify-content: center; }
     .footer-bottom { justify-content: center; text-align: center; }
 
-    .cookie-content { flex-direction: column; text-align: center; gap: 1rem; }
+
 }
 
 @media screen and (max-width: 480px) {
