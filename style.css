@@ -854,7 +854,8 @@ header {
 
 .footer-bottom {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
     align-items: center;
     padding-top: 2rem;
     border-top: 1px solid var(--glass-border);
@@ -864,12 +865,7 @@ header {
     gap: 1rem;
 }
 
-.footer-legal a {
-    color: var(--text-secondary);
-}
-.footer-legal a:hover {
-    color: var(--accent-color);
-}
+
 
 /* ==========================================================================
    Floating Action Buttons (WhatsApp & Instagram)
